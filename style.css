@@ -43,8 +43,9 @@ body {
 
 .time-unit {
   font-size: 2rem;
-  margin-top: 10px;
   transition: all 0.3s ease;
+  min-width: 100px;
+  text-align: left;
 }
 
 .now-time {
@@ -70,10 +71,12 @@ body {
 }
 
 .progress-circle {
-  margin: 20px auto;
-  position: relative;
-  width: 120px;
-  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 10px auto;
+  width: fit-content;
 }
 
 circle {
