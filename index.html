@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contagem Regressiva Premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggle-theme">Alternar Tema</button>
+    <button id="toggle-audio">Som Ambiente</button>
+  </div>
+  <div class="timer-container">
+    <h1>Contagem Regressiva para o Embarque</h1>
+    <div class="now-time" id="now-time"></div>
+
+    <div class="progress-circle">
+      <svg width="120" height="120">
+        <circle cx="60" cy="60" r="50" class="bg" />
+        <circle cx="60" cy="60" r="50" class="fg" id="circle-days" />
+      </svg>
+      <div class="time-unit" id="days"></div>
+    </div>
+
+    <div class="progress-circle">
+      <svg width="120" height="120">
+        <circle cx="60" cy="60" r="50" class="bg" />
+        <circle cx="60" cy="60" r="50" class="fg" id="circle-hours" />
+      </svg>
+      <div class="time-unit" id="hours"></div>
+    </div>
+
+    <div class="progress-circle">
+      <svg width="120" height="120">
+        <circle cx="60" cy="60" r="50" class="bg" />
+        <circle cx="60" cy="60" r="50" class="fg" id="circle-minutes" />
+      </svg>
+      <div class="time-unit" id="minutes"></div>
+    </div>
+
+    <div class="progress-circle">
+      <svg width="120" height="120">
+        <circle cx="60" cy="60" r="50" class="bg" />
+        <circle cx="60" cy="60" r="50" class="fg" id="circle-seconds" />
+      </svg>
+      <div class="time-unit" id="seconds"></div>
+    </div>
+  </div>
+
+  <audio id="ambient-audio" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2023/03/26/audio_6b3ecf28c8.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
