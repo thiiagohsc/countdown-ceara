@@ -1,4 +1,4 @@
-const targetDate = new Date("2025-09-26T00:00:00").getTime();
+const targetDate = new Date("2026-03-11T00:00:00").getTime();
 const maxDays = 365;
 
 function updateCountdown() {
